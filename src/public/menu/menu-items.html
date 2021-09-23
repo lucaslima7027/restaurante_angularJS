@@ -1,0 +1,25 @@
+<div id=main-content class="container">
+<h2 id="menu-categories-title" class="text-center">{{itemsCtrl.menuItems.category.name}} Menu</h2>
+<div class="text-center">{{itemsCtrl.menuItems.category.special_instructions}}</div>
+
+<div class="row">
+<div class="menu-item-tile col-lg-6" ng-repeat="menu_items in itemsCtrl.menuItems.menu_items">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="menu-item-photo">
+          <div>{{menu_items.short_name}}</div>
+          <img class="img-fluid" width="250px" height="150px" ng-src="{{itemsCtrl.ApiBasePath}}/{{menu_items.short_name}}.jpg" alt="{{menu_items.short_name}}">
+        </div>
+        <div class="menu-item-price">{{menu_items.price_small | currency}} <span>{{menu_items.small_portion_name}}</span>{{menu_items.price_large | currency}} <span>{{menu_items.large_portion_name}}</span></div>
+      </div>
+      <div class="menu-item-description col-md-7">
+        <h3 class="menu-item-title">{{menu_items.name}}</h3>
+        <p class="menu-item-details">{{menu_items.description}}</p>
+    </div>
+  </div>
+  <hr class="d-block d-sm-none">
+</div>
+</div>
+</div>
+
+

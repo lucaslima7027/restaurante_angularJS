@@ -1,0 +1,271 @@
+/* HOME PAGE */
+.jumbotron {
+    box-shadow: 0 0 50px #3F0c1F;
+    border: 2px solid #3f0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+height: 250px;
+width: 100%;
+margin-bottom: 15px;
+margin-top: 15px;
+position: relative;
+border: 2px solid #3F0C1F;
+overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+background: url('../images/menu-tile.jpg') no-repeat;
+background-position: center;
+}
+
+#specials-tile {
+background: url('../images/specials-tile.jpg') no-repeat;
+background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100%;
+text-align: center;
+font-size: 1.6em;
+text-transform: uppercase;
+background-color: #000;
+color: #fff;
+opacity: .8;
+}
+
+#home-tiles a{
+text-decoration: none;
+}
+
+/*END HOME PAGE */
+
+/* MENU CATEGORIES */
+
+.category-tile {
+position: relative;
+overflow: hidden;
+width: 200px;
+height: 200px;
+border: 2px solid #3F0C1F;
+margin: 0 auto 15px;
+}
+
+.category-tile span{
+position: absolute;
+bottom: 0px;
+right: 0px;
+width: 100%;
+text-align: center;
+font-size: 1.2em;
+text-transform: uppercase;
+background-color: #000;
+color: #FFF;
+opacity: .8;
+}
+
+.category-tile:hover {
+box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+margin-bottom: 50px;
+}
+/* END MENU CATEGORIES */
+
+
+
+
+/* SINGLE CATEGORY */
+.menu-item-tile{
+margin-bottom: 40px;
+
+}
+
+.menu-item-tile hr{
+width: 80%;
+display: flex;
+margin-right: auto;
+margin-left: auto;
+}
+
+.menu-item-photo{
+position: relative;
+border: 2px solid #3F0C1F;
+overflow: hidden;
+padding: 0;
+max-width: 250px;
+}
+
+.menu-item-photo div{
+position: absolute;
+bottom: 0;
+right: 0;
+background-color: #557c3e;
+width: 80px;
+text-align: center;
+}
+
+.menu-item-tile h3{
+margin: 0 0 10px;
+}
+
+.menu-item-description{
+margin-left: -10px;
+}
+
+.menu-item-details{
+font-style: italic;
+}
+
+.menu-item-price{
+font-size: 1.1em;
+text-align: right;
+margin-top: 10px;
+max-width: 250px;
+}
+
+.menu-item-price span{
+font-size: 0.6em;
+margin-right: 8px;
+}
+/* END SINGLE CATEGORY */
+
+
+#about h2, #awards h2 {
+font-size: 30px;
+margin-bottom: 20px;
+margin-top: 20px;
+
+}
+
+#about div p {
+font-size: 20px;
+text-align: left;
+margin-bottom: 30px;
+}
+
+#about div div {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#about a {
+color: #f2f2f2;
+}
+
+#about ul li {
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+#about .aside{
+font-size: 16px;
+}
+
+
+#awards div p {
+font-size: 20px;
+margin-bottom: 20px;
+}
+
+#awards div {
+margin-bottom: 500px;
+}
+
+
+/****** EXTRA LARGE DEVICES ******/
+@media (min-width: 1200px){
+.jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+}
+
+#about div div {
+height: 641px;
+}
+
+}
+/****** END EXTRA LARGE DEVICES ******/
+
+/****** LARGE DEVICES ******/
+@media (min-width: 992px) and (max-width: 1199px){
+    .jumbotron {
+		background: url('../images/jumbotron_992.jpg') no-repeat;
+		height: 558px;
+	}
+
+	#about div div {
+	height: 529px;
+}
+}
+/****** END LARGE DEVICES ******/
+
+/****** MEDIUM DEVICES ******/
+@media (min-width:768px) and (max-width:991px){
+    #about div div {
+        height: 405px;
+}
+    
+}
+/****** END MEDIUM DEVICES ******/
+
+/****** SMALL DEVICES ******/
+@media (min-width: 576px) and (max-width: 767px){
+    .menu-item-photo{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.menu-item-price{
+		text-align: center;
+		margin-bottom: 20px;
+		max-width: none;
+	}
+
+	.menu-item-description{
+		text-align: center;
+	}
+
+	#about div div {
+	height: 290px;
+}
+}
+/****** END SMALL DEVICES ******/
+
+/****** EXTRA SMALL DEVICES ******/
+@media (max-width: 575px){
+    #menu-tile, #specials-tile, #map-tile{
+		width: 250px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+	.menu-item-photo{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.menu-item-price{
+		text-align: center;
+		margin-bottom: 20px;
+		max-width: none;
+	}
+
+	.menu-item-description{
+		text-align: center;
+	}
+
+    #about div div {
+        height: 255px;
+    }
+}
+/****** END EXTRA SMALL DEVICES ******/
